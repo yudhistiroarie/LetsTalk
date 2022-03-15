@@ -658,13 +658,15 @@ section {overflow: hidden;}
 #services {.bg_color(#fff); background-size: cover; .sections();
     
     .box {
-        padding: 50px 20px;
-        margin-bottom: 50px;
+        padding: 20px 20px 0;
+        // margin-bottom: 50px;
         text-align: center;
         border: 1px solid #e6e6e6;
-        height: 200px;
+        min-height: 150px;
         position: relative;
         .bg_color(#fafafa);
+        
+        &:nth-child(n + 3) {margin-top: 50px;}
         
         &:hover .icon {.bg_color(#fff); border: 2px solid @main_color;
             
