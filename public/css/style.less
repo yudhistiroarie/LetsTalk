@@ -5,6 +5,7 @@
 @main_color: #2dc997;
 @yellow_color: #EFC94F;
 @grey_color: #484A4A;
+@green_color: #2ad178;
 
 .palanquin_dark_font() {font-family: "Palanquin Dark", sans-serif;}
 .open_sans_font() {font-family: "Open Sans", sans-serif;}
@@ -1008,10 +1009,10 @@ section {overflow: hidden;}
         .sent-message {
             display: none;
             .color(#fff);
-            .bg_color(#18d26e);
+            .bg_color(@green_color);
             text-align: center;
             padding: 15px;
-            font-weight: 600;
+            font-weight: 500;
         }
         
         .loading {
@@ -1027,9 +1028,9 @@ section {overflow: hidden;}
                 width: 24px;
                 height: 24px;
                 margin: 0 10px -6px 0;
-                border: 3px solid #18d26e;
+                border: 3px solid @main_color;
                 border-top-color: #eee;
-              -webkit-animation: animate-loading 1s linear infinite;
+                -webkit-animation: animate-loading 1s linear infinite;
                 animation: animate-loading 1s linear infinite;
             }
         }
@@ -1044,10 +1045,10 @@ section {overflow: hidden;}
             .bg_color();
             border: 0;
             padding: 10px 24px;
-            .color(#fff);
-            transition: 0.4s;
+            .color(@grey_color);
+            transition: 0.15s;
             
-            &:hover {.bg_color(#51d8ad);}
+            &:hover {.bg_color(@grey_color); .color(@yellow_color);}
         }
     }
 }

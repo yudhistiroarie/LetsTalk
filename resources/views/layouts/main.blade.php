@@ -947,7 +947,8 @@
         <script src="{{ asset('js/jparticle.jquery.min.js') }}"></script>
         
         <!-- less -->
-        <script src="{{ asset('js/less_v2.7.2.js') }}" data-log-level="1"></script>
+        {{-- <script src="{{ asset('js/less_v2.7.2.js') }}" data-log-level="1"></script> --}}
+        <script src="{{ asset('js/less_v4.1.1.js') }}" data-log-level="1"></script>
         
         <!-- Vendor JS Files -->
         <script src="{{ asset('vendor/purecounter/purecounter.js') }}"></script>
